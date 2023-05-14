@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Table</title>
+    <link rel="stylesheet" href="../css/tablepage.css">
+</head>
+<body>
+    <div id="table">
+        <h2>Database Table</h2>
+       <a href="/tablepost"> <button class="custom-btn btn-11" id="btn-11">Add Data<div class="dot"></div></button></a>
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr id="table-header">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Client Email</th>
+            <th>Published Link</th>
+            <th>Published Date</th>
+            <th>Expiry Date</th>
+            <th>Price in $</th>
+        </tr>
+        </thead>
+        <tbody id="table-content-section">
+            {{#each details}}
+            <tr>
+            <td>{{_id}}</td>
+            <td>{{name}}</td>
+            <td>{{clientemail}}</td>
+            <td>{{publishedlink}}</td>
+            <td>{{publisheddate}}</td>
+            <td>{{expirydate}}</td>
+            <td>{{price}}</td>
+            </tr>
+            {{/each}}
+        <tbody>
+    </table>
+</div>
+    </div>
+</body>
+</html>

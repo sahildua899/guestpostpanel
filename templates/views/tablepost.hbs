@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/tablepost.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Database</title>
+</head>
+<body>
+<div class="container">
+  <div class="components">
+    <h1 class="register_text">Add New Data</h1>
+    <form class="form" action="/api/tablepost" method="post">
+      <label for="name">Name</label><br>
+      <input type="text" class="form__input" placeholder="Name" id="name" name="name"><br>
+      <label for="email">Client Email</label><br>
+      <input type="email" class="form__input" placeholder="Email Address" id="email" name="email"><br>
+      <label for="publink">Published Link</label><br>
+      <input type="text" class="form__input" placeholder="Published Link" id="publink" name="publink"><br>
+      <label for="pubdate">Published Date</label><br>
+      <input type="date" class="form__input" placeholder="Published Date" id="pubdate" name="pubdate"><br>
+      <label for="expdate">Expiry Date</label><br>
+      <input type="date" class="form__input" placeholder="Expiry Date" id="expdate" name="expdate"><br>
+      <label for="price">Price in $</label><br>
+      <input type="text" class="form__input" placeholder="Price in $" id="price" name="price"><br>
+      <input type="submit" class="btn btn__primary" value="Add Data">
+    </form>
+  </div>
+</div>
+</body>
+</html>
